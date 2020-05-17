@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Samuel Portfolio</title>
+  </head>
+
+  <body>
+    <div id="snow_fall"></div>
+
+    <div class="container navbar ">
+      <header>
+
+        <div class="lgo">
+          <h1>Samuel</h1>
+        </div>
+
+        <nav>
+          <ul>
+            <li> <a href="#about">About Me</a></li>
+            <li> <a href="#skills">Skills</a></li>
+            <li> <a href="#sociallink">Social links</a></li>
+          </ul>
+        </nav>
+
+      </header>
+    </div>
+
+    <div class="container main-info-section">
+      <div class="text">
+        <h1>
+          <span>H</span>
+          <span class="m-left">i</span>
+          <span class="m-left">,</span>
+          <br>
+          <span>I</span>
+          <span class="m-left">'</span>
+          <span class="m-left">m</span>
+          <span class="name">S</span>
+          <span class="m-left name">amuel</span>
+          <span class="m-left">,</span>
+          <br>
+          <span>W</span>
+          <span class="m-left">eb developer.</span>
+        </h1>
+            <p>CSS / JavaScript / React</p>
+            <a href="#contact">Contact Me</a>
+      </div>
+      <div class="profile-image">
+        <img src="img/Me.png" alt="">
+      </div>
+    </div>
+
+    <div class="container about" id="about">
+      <h1>About</h1>
+      <div class="about-me-info">
+        <p>My name is Samuel, I'm a Front-End Web developer. I love healthy life and sport.</p>
+      </div>
+    </div>
+
+
+    <div class="container skills" id="skills">
+      <h1>Skills</h1>
+      <p class="skills-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <section class= "container circleBar" id="circleBar">
+      <div class="circlecontainer">
+        <div class="row">
+
+          <div class="col-md-3">
+            <div class="round" data-value="0.87" data-size='200' data-thickness='12'>
+              <strong></strong>
+              <span> <i class="fa fa-html5"></i>
+                HTLM SKILLS
+              </span>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="round" data-value="0.74" data-size='200' data-thickness='12'>
+              <strong></strong>
+              <span> <i class="fa fa-css3"></i>
+                CSS SKILLS
+              </span>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="round" data-value="0.54" data-size='200' data-thickness='12'>
+              <strong></strong>
+              <span> <i class="fa fa-jsfiddle"></i>
+                JS SKILLS
+              </span>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="round" data-value="0.95" data-size='200' data-thickness='12'>
+              <strong></strong>
+              <span> <i class="fa fa-laptop"></i>
+                Bootstrap SKILLS
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+        <button class="btn" onclick="Circlle('.round');">Refresh<span></span></button>
+    </section>
+
+    <div class="container sociallink" id="sociallink">
+      <h1>My social pages</h1>
+      <ul>
+        <li>
+          <a href="https://github.com/Classiclegend98" target = "_blank">
+            <span class = "gitHub">
+              <img src="img/GitHub.png" alt="socialMedia">
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/SamManresa" target = "_blank">
+            <span class = "twitter">
+              <img src="img/twitter.png" alt="socialMedia">
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/manresa-samuel-9431b295/" target = "_blank">
+            <span class = "linkedin">
+              <img src="img/LinkedIn.png" alt="socialMedia">
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container contact" id="contact">
+      <h1>Contact</h1>
+      <form>
+        <input type="text" name="name" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="coocoo@coco.com" disabled>
+        <textarea name="message" rows="10" cols="30"></textarea>
+        <input type="submit">
+      </form>
+    </div>
+
+    <footer>
+      <hr>
+      <p>2020 Copyright. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/Circle.js"></script>
+  </body>
+</html>
