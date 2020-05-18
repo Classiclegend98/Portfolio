@@ -3,7 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'PT Sans', 'sans-serif';
+  float: none;
 }
+
+/* @media (min-width : 480px) and (max-width : 780px) {
+
+} */
 
 html {
   scroll-behavior: smooth;
@@ -12,7 +17,9 @@ html {
 
 body {
     background-color: #252627;
-    height: 100vh;
+    display: grid;
+
+
 }
 
 #snow_fall {
@@ -158,7 +165,7 @@ span.m-left {
 }
 
 .about {
-  height: 70vh;
+  height: 100vh;
   margin-top: 10px;
 }
 
@@ -193,7 +200,7 @@ span.m-left {
 }
 
 .skills {
-  height: 70vh;
+  height: 100vh;
 }
 
 .skills h1 {
@@ -234,6 +241,7 @@ span.m-left {
 
 .contact {
   margin-top: 50px;
+  height: 100vh;
 }
 
 form input,
