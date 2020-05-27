@@ -23,7 +23,7 @@ body {
 }
 
 #snow_fall {
-  height: 490%;
+  height: 510%;
   z-index:-2;
   left:0;
   top:0;
@@ -216,7 +216,7 @@ span.m-left {
   position: relative;
   left: 20%;
   right: 50%;
-  transform: translateX(-50px);
+  transform: translateX(-55px);
   text-align: center;
   margin-bottom: 50px;
 }
