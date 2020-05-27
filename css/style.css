@@ -12,13 +12,13 @@
 
 html {
   scroll-behavior: smooth;
-
+  min-height: 100vh;
 }
 
 body {
     background-color: #252627;
     display: grid;
-    grid-row-gap: 5rem;
+    grid-row-gap: 8rem;
 }
 
 #snow_fall {
@@ -96,18 +96,11 @@ nav a {
   color: #fff;
   font-size: 3rem;
   cursor: context-menu;
-}
-
-.text span {
-  display:inline-block;
+  display: inline-grid;
 }
 
 span.name {
   color: #ED5565;
-}
-
-span.m-left {
-  margin-left: -10px;
 }
 
 .text p {
@@ -157,7 +150,8 @@ span.m-left {
 }
 
 .profile-image img {
-  width: 225px;
+  max-width: 225px;
+  height: auto;
   margin-top: 25px;
   border: none;
   opacity: 0.5;
@@ -268,4 +262,112 @@ footer p {
   font-size: 1.1rem;
   text-align: center;
   padding: 30px 0;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+body {
+  background-color: #252627;
+  display: grid;
+  grid-auto-columns: 25rem;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+header h1 {
+  display: flex;
+}
+
+nav ul {
+  display: block;
+  margin-bottom: 5px:
+}
+
+nav li {
+    list-style: none;
+    margin-left: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    border: gray solid 1px;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+.about h1 {
+  font-size: 7rem;
+  z-index: 0;
+  opacity: .1;
+}
+
+.about-me-info {
+    max-width: 782px;
+    background-color: #252627;
+    box-shadow: 0 0 0 0.8rem rgba(0, 0, 0, .25);
+    padding: 50px;
+    position: relative;
+    top: -30px;
+    left: 10%;
+    right: 50%;
+    transform: translateX(-50px);
+    z-index: 1;
+}
+
+.skills h1 {
+    text-align: right;
+    font-size: 7rem;
+    opacity: .1;
+}
+
+.sociallink h1 {
+    text-align: center;
+    font-size: 3rem;
+    opacity: .1;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 3rem;
+    opacity: .1;
+}
+
+form input, form textarea {
+    display: block;
+    width: 350px;
+    padding: 10px;
+    background-color: #252627;
+    border: 3px solid #707070;
+    margin: 20px 0;
+    outline: none;
+    font-size: 1.1rem;
+    color: #fff;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+footer p {
+    text-align: center;
+    color: #707070;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 30px 0;
+}
 }
