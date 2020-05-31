@@ -9,3 +9,8 @@ function scrollToTop() {
         behavior: 'smooth'
     })
 }
+
+function toggle() {
+    const body = document.querySelector('body');
+    body.classList.toggle('light');
+}

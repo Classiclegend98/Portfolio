@@ -6,10 +6,6 @@
   float: none;
 }
 
-/* @media (min-width : 480px) and (max-width : 780px) {
-
-} */
-
 html {
   scroll-behavior: smooth;
   min-height: 100vh;
@@ -27,6 +23,10 @@ body {
   z-index: -3;
 }
 
+body.light {
+  background: blueviolet;
+}
+
 #snow_fall {
   z-index: -2;
   left: 0;
@@ -34,6 +34,17 @@ body {
   right: 0;
   bottom: 0;
   background: #252627;
+  position: absolute;
+  opacity: 0.9;
+}
+
+body.light #snow_fall {
+  z-index: -2;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
   position: absolute;
   opacity: 0.9;
 }
@@ -69,6 +80,18 @@ header {
   z-index: 2;
 }
 
+body.light header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: solid white;
+  padding: 20px 0;
+  background-color: transparent;
+
+  top: 0;
+  z-index: 2;
+}
+
 header h1,
 .text p,
 .about h1,
@@ -78,8 +101,72 @@ header h1,
   color: #707070;
 }
 
+body.light header h1,
+.text p,
+.about h1,
+.skills h1,
+.contact h1,
+.sociallink h1 {
+  color: #fff;
+}
+
+body.light header h1:hover {
+  z-index: 1000;
+  transition: 0.5s;
+  color: #ffd700;
+  text-shadow: 0 0 5px ffd700;
+}
+
+header h1:hover {
+  z-index: 1000;
+  transition: 0.5s;
+  color: #fff;
+  text-shadow: 0 0 5px #fff;
+}
+
 header a {
   color: #ffd700;
+}
+
+header a:hover {
+  z-index: 1000;
+  transition: 0.5s;
+  color: #ffff00;
+  text-shadow: 0 0 5px #ffff00;
+}
+
+.toggle {
+  background-color: blueviolet;
+  position: absolute;
+  top: 30px;
+  z-index: 5;
+  right: 140px;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  border-radius: 50%;
+}
+
+.toggle:before {
+  content: "Soft mode";
+  position: absolute;
+  white-space: nowrap;
+  left: 25px;
+  font-weight: 600;
+  color: #fff;
+}
+
+body.light .toggle {
+  background: #252627;
+  color: #252627;
+}
+
+body.light .toggle:before {
+  content: "Dark mode";
+  position: absolute;
+  white-space: nowrap;
+  left: 25px;
+  color: #252627;
 }
 
 nav li {
@@ -188,6 +275,19 @@ span.name {
   z-index: 1;
 }
 
+body.light .about-me-info {
+  max-width: 900px;
+  background-color: transparent;
+  box-shadow: 0 0 0 0.8rem rgba(0, 0, 0, 0.25);
+  padding: 50px;
+  position: relative;
+  top: -50px;
+  left: 10%;
+  right: 50%;
+  transform: translateX(-50px);
+  z-index: 1;
+}
+
 .about-me-info p {
   font-size: 1.2rem;
   color: #bebebe;
@@ -250,6 +350,11 @@ form textarea {
   transform: translateX(-50%);
 }
 
+body.light form input,
+form textarea {
+  background-color: transparent;
+}
+
 form input:last-child {
   width: 150px;
   background-color: #ed5565;
@@ -270,7 +375,11 @@ footer p {
   padding: 30px 0;
 }
 
-@media screen and (max-width: 600px) {
+body.light footer p {
+  color: #ffff;
+}
+
+@media screen and (max-width: 900px) {
   body {
     grid-auto-columns: 100%;
   }
@@ -281,6 +390,25 @@ footer p {
 
   header h1 {
     display: none;
+  }
+
+  .toggle {
+    background-color: blueviolet;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    border-radius: 50%;
+  }
+
+  body.light .toggle:before {
+    content: "Dark mode";
+    position: absolute;
+    white-space: nowrap;
+    left: 25px;
+    color: #ffd700;
   }
 
   .navbar {
@@ -310,12 +438,15 @@ footer p {
     z-index: 3;
     width: 60px;
     height: 60px;
-    margin: 1rem;
+    margin: 1.3rem;
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
   }
 
   /*Hamburger lines*/
@@ -432,9 +563,9 @@ footer p {
 
   header {
     justify-content: center;
-    padding: 25px;
+    padding: 23px;
     border-radius: 60px;
-    border: #fff solid 1px;
+    border: #fff solid 2px;
     background-color: transparent;
   }
 
