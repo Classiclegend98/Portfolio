@@ -350,8 +350,11 @@ form textarea {
   transform: translateX(-50%);
 }
 
-body.light form input,
-form textarea {
+body.light form input {
+  background-color: transparent;
+}
+
+body.light textarea {
   background-color: transparent;
 }
 
