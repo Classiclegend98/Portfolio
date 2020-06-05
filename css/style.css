@@ -145,6 +145,7 @@ header a:hover {
   height: 20px;
   font-size: 15px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .toggle:before {
