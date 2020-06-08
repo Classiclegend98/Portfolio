@@ -4,15 +4,16 @@ if(isset($_POST['submit'])){
     $name = $_POST['name'];
     $email = $_POST['email'];
     $subject = $_POST['subject'];
-    $message = $_POST['message'];
+    $msg = $_POST['message'];
 
-    $mailTo = "samuel.manresa@gmail.com";
-    $headers = "From: Samuel Portfolio ".$mailFrom;
-    $txt = "Samuel Portfolio from ".$name.".\n\n".$message;
+    $to = "samuel.manresa@gmail.com";
+    $headers = "From: Samuel Portfolio - ".$email;
+    $txt = "Samuel Portfolio from ".$name.".\n\n".$subject.".\n\n".$msg;
 
-    mail($mailTo, $subject, $txt, $headers);
-    header("Location: index.php?mailsend");
-}
-else{
-    header("Location: index.php?signup=error");
+    if(mail($to, $headers, $txt, $headers)) {
+        echo "<h1>Sent with Success! Thank you"." ".$name.", We will contact you shortly</h1>";
+    }
+    else {
+        echo "Sorry, something went wrong!";
+    }
 }
