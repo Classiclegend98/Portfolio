@@ -177,11 +177,12 @@
 
     <div class="container contact" id="contact">
       <h1>Contact</h1>
-      <form netlify>
+      <form action="contact-form.php" method="POST" class="form-box">
         <input type="text" name="name" placeholder="Full Name" />
-        <input type="email" placeholder="Email" />
-        <textarea name="message" rows="10" cols="30"></textarea>
-        <input type="submit" />
+        <input type="text" name="email" placeholder="E-mail" />
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea type="text" name="message" rows="10" cols="30"></textarea>
+        <input type="submit" name="submit" />
       </form>
     </div>
 
@@ -196,6 +197,6 @@
     <script src="js/particles.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/Circle.js"></script>
-    <script src="js/scrollTop.js"></script>
+    <script src="js/otherFunctions.js"></script>
   </body>
 </html>
