@@ -13,3 +13,6 @@ if(isset($_POST['submit'])){
     mail($mailTo, $subject, $txt, $headers);
     header("Location: index.php?mailsend");
 }
+else{
+    header("Location: index.php?signup=error");
+}
