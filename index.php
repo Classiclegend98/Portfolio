@@ -177,7 +177,7 @@
 
     <div class="container contact" id="contact">
       <h1>Contact</h1>
-      <form action="contact-form.php" method="POST" class="form-box">
+      <form action="contactForm.php" method="POST" class="form-box">
         <input type="text" name="name" placeholder="Full Name" />
         <input type="text" name="email" placeholder="E-mail" />
         <input type="text" name="subject" placeholder="Subject" />
