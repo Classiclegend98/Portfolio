@@ -366,6 +366,15 @@ form input:last-child {
   cursor: pointer;
 }
 
+#errorMessage {
+  margin: 15px;
+  background: #ed5565;
+  padding: 0px;
+  text-align: center;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
 footer hr {
   border: 2px solid #707070;
   margin-top: 80px;

@@ -177,12 +177,19 @@
 
     <div class="container contact" id="contact">
       <h1>Contact</h1>
-      <form action="contactForm.php" method="POST" class="form-box">
-        <input type="text" name="name" placeholder="Full Name" />
-        <input type="text" name="email" placeholder="E-mail" />
-        <input type="text" name="subject" placeholder="Subject" />
-        <textarea type="text" name="message" rows="10" cols="30"></textarea>
-        <input type="submit" name="submit" />
+      <div id="errorMessage"></div>
+
+      <form
+        action="https://formspree.io/samuel.manresa@gmail.com"
+        method="POST"
+        id="myForm"
+        class="form-box"
+      >
+        <input type="text" name="name" id="name" placeholder="Full Name" />
+        <input type="text" name="email" id="email" placeholder="E-mail" />
+        <input type="text" name="subject" id="subject" placeholder="Subject" />
+        <textarea type="text" id="message" rows="10" cols="30"></textarea>
+        <input type="submit" class="submit" />
       </form>
     </div>
 
@@ -192,6 +199,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/particles.min.js"></script>
