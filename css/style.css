@@ -395,6 +395,7 @@ body.light footer p {
 @media screen and (max-width: 900px) {
   body {
     grid-auto-columns: 100%;
+    background: #252627;
   }
 
   header {
