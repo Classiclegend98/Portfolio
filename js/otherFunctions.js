@@ -81,9 +81,9 @@ $(document).ready(function () {
             errorMessage.innerHTML = text;
             return false;
         }
-        if (message.length <= 100) {
+        if (message.length <= 50) {
             event.preventDefault()
-            text = "Please Enter More Than 100 Characters";
+            text = "Please insert not less than 50 Characters as message";
             errorMessage.innerHTML = text;
             return false;
         }
