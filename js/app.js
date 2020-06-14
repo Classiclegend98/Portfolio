@@ -3,10 +3,10 @@ particlesJS('snow_fall',
   {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 150,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 1000
         }
       },
       "color": {
@@ -23,8 +23,8 @@ particlesJS('snow_fall',
         },
         "image": {
           "src": "img/github.svg",
-          "width": 100,
-          "height": 100
+          "width": 90,
+          "height": 90
         }
       },
       "opacity": {
@@ -38,11 +38,11 @@ particlesJS('snow_fall',
         }
       },
       "size": {
-        "value": 3,
+        "value": 2.6,
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 40,
+          "speed": 35,
           "size_min": 0.1,
           "sync": false
         }
@@ -72,11 +72,11 @@ particlesJS('snow_fall',
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
+          "enable": false,
           "mode": "repulse"
         },
         "onclick": {
-          "enable": true,
+          "enable": false,
           "mode": "push"
         },
         "resize": true

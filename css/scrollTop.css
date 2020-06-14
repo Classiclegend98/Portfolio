@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 800px;
   width: 45px;
-  right: 40px;
+  right: 25px;
   height: 45px;
   background: transparent url(../img/Arrow.png);
   border-radius: 50%;
@@ -18,6 +18,6 @@
 
 .scrollTop.active {
   visibility: visible;
-  bottom: 40px;
+  bottom: 15px;
   opacity: 1;
 }
