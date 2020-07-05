@@ -273,9 +273,9 @@ span.name {
 .profile-image img {
   max-width: 225px;
   height: auto;
-  margin-top: 25px;
   border: none;
   opacity: 0.5;
+  border-radius: 100px;
 }
 
 .about h1 {

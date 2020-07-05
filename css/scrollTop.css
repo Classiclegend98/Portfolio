@@ -1,19 +1,56 @@
 .scrollTop {
   position: fixed;
   bottom: 800px;
-  width: 45px;
-  right: 25px;
-  height: 45px;
-  background: transparent url(../img/Arrow.png);
+  width: 100px;
+  right: 0px;
+  height: 85px;
+  background: transparent url(../img/Rocket.png);
   border-radius: 50%;
   background-size: 40px;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   cursor: pointer;
   z-index: 4;
   visibility: hidden;
   opacity: 0;
   transition: 0.5s;
+  animation: animate 0.2s ease infinite;
+  margin-bottom: 50px;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+}
+
+.scrollTop::before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 50px;
+  border-radius: 5px;
+  background: linear-gradient(#00d0ff, transparent);
+}
+
+.scrollTop::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 50px;
+  background: linear-gradient(#00d0ff, transparent);
+  filter: blur(15px);
 }
 
 .scrollTop.active {
