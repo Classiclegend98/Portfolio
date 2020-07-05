@@ -275,6 +275,7 @@ span.name {
   height: auto;
   border: none;
   opacity: 0.5;
+  margin-top: 5px;
   border-radius: 100px;
 }
 
