@@ -35,7 +35,7 @@
   bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
-  width: 10px;
+  width: 5px;
   height: 50px;
   border-radius: 5px;
   background: linear-gradient(#00d0ff, transparent);
@@ -47,7 +47,7 @@
   bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
-  width: 10px;
+  width: 5px;
   height: 50px;
   background: linear-gradient(#00d0ff, transparent);
   filter: blur(15px);
